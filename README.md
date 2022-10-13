@@ -17,9 +17,9 @@
 
 3. Persistent storage: Physical copy of data may get lost or damaged due to any reason but data stored on IPFS and Pinned using Filecoin are totally secure and everlasting. Even if the big bang happens on eath, data on the File coin will be accessible from other planets through satellite node which Protocol Labs team is planning :)
 
-### Contract on Polygon:
+### Contract on Klaytn baobab Testnet:
 
-**1) CrypticVault Contract :** https://mumbai.polygonscan.com/address/0xF7CbDe3831E18067794C615CF6a633Ee719F4D14
+**1) CrypticVault Contract :** https://baobab.scope.klaytn.com/account/0x13BF6db3928289e7a02799B648E7899FE47570E2?tabId=txList
 
 ## It includes:
 
@@ -51,9 +51,9 @@
 
 <img width="1440" alt="Screenshot 2022-07-23 at 11 37 49 AM" src="https://user-images.githubusercontent.com/54347081/180592879-ba4e0fd1-c91e-4329-8fd2-4cbaa8f49f13.png">
 
-### Blockchain: Polygon
+### Blockchain: Klaytn baobab Testnet
 
-https://github.com/mansijoshi17/CrypticVault-live-/blob/master/hardhat.config.js
+https://github.com/devchain17/CrypticVault/blob/main/hardhat.config.js
 
 ```require("dotenv").config({ path: "./.env" });
 require("@nomiclabs/hardhat-waffle");
@@ -61,20 +61,25 @@ require("@nomiclabs/hardhat-waffle");
 const pk_1 = process.env.REACT_APP_PRIVATE_KEY;
 console.log(pk_1);
 module.exports = {
-solidity: "0.8.4",
-networks: {
-hardhat: {},
-mumbai: {
-url: `https://polygon-mumbai.g.alchemy.com/v2/${process.env.REACT_APP_ALCHEMY_KEY}`,
-accounts: [pk_1]
-},
-},
+  solidity: "0.8.4",
+  networks: {
+    hardhat: {},
+    mumbai: {
+      url: `https://polygon-mumbai.g.alchemy.com/v2/${process.env.REACT_APP_ALCHEMY_KEY}`,
+
+      accounts: [pk_1],
+    },
+    klaytn: {
+      url: "https://api.baobab.klaytn.net:8651",
+      accounts: [pk_1],
+    },
+  },
 };
 ```
 
 ### IPFS/Filecoin
 
-https://github.com/mansijoshi17/CrypticVault/blob/master/Filecoin.md
+https://github.com/devchain17/CrypticVault/blob/main/Filecoin.md
 
 ```
  function getAccessToken() {
@@ -118,7 +123,7 @@ https://github.com/mansijoshi17/CrypticVault/blob/master/Filecoin.md
 
 ### XMTP
 
-https://github.com/mansijoshi17/CrypticVault/blob/master/src/context/ChatBoxContext.js
+https://github.com/devchain17/CrypticVault/blob/main/src/context/ChatBoxContext.js
 
 ```
 import { Client, ContentTypeText } from "@xmtp/xmtp-js";
