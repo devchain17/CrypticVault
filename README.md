@@ -29,7 +29,7 @@
 
 **2) Decentralized Encrypted Storage :** In Drive we can store different type of file which will stored encrypted on IPFS.
 
-<img width="1430" alt="drive" src="https://user-images.githubusercontent.com/54347081/180590470-650ce8ea-f6c4-4e05-8830-5bd37adf8bc6.png">
+<img width="1435" alt="Screenshot 2022-10-14 at 9 37 17 AM" src="https://user-images.githubusercontent.com/105703992/195760404-4efffd54-e3d2-4e17-9bfd-32f39c8476d7.png">
 
 **3) Members:** Add Members to give access of your digital vault.
 
